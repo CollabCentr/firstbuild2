@@ -2,13 +2,13 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
 def home(request):
-    return render(request, 'users/index.html',  {'title':"Welcome|CollabCenter"})
+    return render(request, 'users/index.html',  {'title':"Welcome|CollabCentr"})
 
 def door_in(request):
-    return render(request, 'users/door_in.html', {'title':"Door In|CollabCenter"})
+    return render(request, 'users/belong.html', {'title':"Door In|CollabCentr"})
 
 def login(request):
-    return render(request, 'users/login.html', {'title':"Login|CollabCenter"})
+    return render(request, 'users/doorin.html', {'title':"Login|CollabCentr"})
 
 
 @login_required
